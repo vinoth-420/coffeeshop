@@ -1,0 +1,751 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Nanum+Gothic&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-wrap: pretty;
+    /* border: 1px solid red; */
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    /* background-color: #000000; */
+    font-family: "Nanum Gothic", sans-serif;
+
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6,
+p {
+    text-wrap: balance;
+}
+
+input,
+textarea,
+button {
+    font-family: inherit
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+:root {
+    --primaryColor: #be9c79;
+    --secondaryColor: #660600;
+    --darkColor: #330300;
+    --lightColor: #ff0f00;
+    --regularFont: 1.6rem;
+    --headingFont: 54px;
+    --ffPrimary: "Raleway", sans-serif;
+}
+
+/* Default code Ends here */
+
+/* project standard classes Starts */
+
+.align {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 3rem;
+}
+
+.componentSpacing {
+    padding: 1rem 0;
+}
+
+/* project standard classes Ends */
+.dflex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dflex-col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dflex-col-start {
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+    flex-direction: column;
+    /* text-align: center; */
+}
+.dflex-col-just-start {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+.dflex-start {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: center;
+    flex-direction: column;
+}
+
+.dflexaround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+/*::: HEADER CODE STARTS HERE::: */
+/* 
+.navContainer{
+    background-color: #660600;
+} */
+/* 
+.navBar{
+    background-color: #7fffd4;
+} */
+
+/* .navBody{
+    background-color: #8a2be2;
+} */
+
+.logoImage{
+    /* background-color: brown; */
+    padding: 2rem 0rem;
+}
+.logoImage img{
+    /* background-color: chartreuse; */
+    height: 8vh;
+    margin-left: 5rem;
+ 
+}
+
+.navLinks{
+    /* background-color: burlywood; */
+    gap: 2rem;
+}
+
+.navLinks li{
+    /* background-color: #00ffff; */
+    list-style-type: none;
+}
+
+.navLinks li a{
+    /* background-color: #91ac77; */
+    text-decoration: none;
+    color: #000000;
+    font-size: 2rem;
+}
+.heroSection {
+    background-image: url(assests/images/herosection\ img.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+.heroBody {
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.jumbotron {
+    flex-direction: column;
+    padding: 15rem 20rem 15rem 2rem;
+}
+
+.jumbotron h1 {
+    font-size: 5rem;
+    /* background-color: #00ffff; */
+    padding: 0rem 8rem;
+    font-family: "Merienda", cursive;
+}
+
+.jumbotron h3 {
+    font-size: 1.2rem;
+    padding: 0rem 3rem;
+}
+
+.jumbotron p {
+    font-size: 1.2rem;
+    padding: 0rem 15rem;
+    font-weight: 600;
+}
+
+.jumbotron button {
+    /* padding: 1rem; */
+    background-color: #be9b79d0;
+    padding: 1rem 2rem;
+    margin: 2rem 18rem;
+    color: #ffffff;
+    border: 0rem;
+}
+
+.jumbotron button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/*::: HEADER CODE ENDS HERE::: *
+
+/*::: MAIN CODE STARTS HERE::: */
+
+.ourMenuContainer {
+    /* background-color: #be9c79; */
+    padding: 2rem 0rem;
+}
+/* .ourMenu {
+    background-color: #660600;
+} */
+.ourMenuBody {
+    /* background-color: #ff0f00; */
+    padding: 0rem 2rem 0rem 0rem;
+
+}
+/* .menuImage {
+    background-color: rgb(102, 76, 43) ;
+    
+} */
+.menuImage img {
+    /* background-color: aqua; */
+    height: 50rem;
+    width: auto;
+    padding: 0rem 0rem 0rem 9rem;
+
+}
+/* .menuText {
+    background-color: #3a2fdd;
+        
+} */
+
+.menuText h2 {
+    font-size: 4rem;
+    font-family: Merienda One;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+    font-family: "Merienda", cursive;    
+}
+
+.menuText p {
+    /* background-color: blanchedalmond; */
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    word-spacing: 0.3rem;
+}
+.menuText button {
+    background-color:#be9c79;
+    padding: 1rem;
+    border: 0;
+}
+
+.menuText button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+.menuText button a {
+    /* background-color: brown; */
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: aliceblue;
+    
+}
+
+/* .ourFacilityContainer {
+    background-color: #00ffff;
+} */
+
+/* .ourFacility {
+    background-color: #e48079;
+} */
+
+.ourFacilityHeaderBody {
+    /* background-color: #bd7228; */
+    padding: 0rem 0rem 3rem 0rem;
+}
+
+/* .ourFacilityHeaderBody {
+    background-color: #7e7ef7;
+    padding: 1rem;
+} */
+
+
+.facilityText img {
+    /* background-color: rgb(111, 84, 155); */
+    height: 4rem;
+}
+
+.facilityText h2 {
+    /* background-color: #a4f77e; */
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+
+}
+
+.facilityLogo1 h4 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    font-weight: 100;
+}
+
+.facilityLogo1 p {
+    font-size: 1.3rem;
+    padding: 0rem 3rem;
+    word-spacing: 1rem;
+}
+
+
+.facilityLogo2 h4 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    font-weight: 100;
+}
+
+.facilityLogo2 p {
+    font-size: 1.3rem;
+    padding: 0rem 3rem;
+    word-spacing: 1rem;
+}
+
+.facilityLogo3 h4 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    font-weight: 100;
+}
+
+.facilityLogo3 p {
+    /* background-color: #a4f77e; */
+    font-size: 1.3rem;
+    padding: 0rem 3rem;
+    word-spacing: 1rem;
+}
+
+.facilityLogo4 h4 {
+    font-size: 2rem;
+    padding: 1rem 0rem;
+    font-weight: 100;
+}
+
+.facilityLogo4 p {
+    /* background-color: #a4f77e; */
+    font-size: 1.3rem;
+    padding: 0rem 3rem;
+    word-spacing: 1rem;
+}
+/* 
+.PopularMenuContainer {
+    background-color: #00ffff;
+} */
+/* 
+.PopularMenu {
+    background-color: #be9c79;
+} */
+/* 
+.PopularMenuHeadingBody {
+    background-color: #ff0f00;
+} */
+/* 
+.PopularMenu {
+    background-color: #d87109;
+} */
+
+
+.PopularMenuText img {
+    /* background-color: rgb(111, 84, 155); */
+    height: 4rem;
+}
+
+.PopularMenu h2 {
+    /* background-color: #44d809; */
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+}
+
+.Menu img{
+     aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+}
+
+.PopularMenu1 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.PopularMenu1 h4{
+    font-size: 1.8rem;
+}
+
+.PopularMenu2 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.PopularMenu2 h4{
+    font-size: 1.8rem;
+}
+
+.PopularMenu3 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.PopularMenu3 h4{
+    font-size: 1.8rem;
+}
+
+.PopularMenu4 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.PopularMenu4 h4{
+    font-size: 1.8rem;
+}
+
+.PopularMenu5 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.PopularMenu5 h4{
+    font-size: 1.8rem;
+}
+
+.PopularMenu6 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.PopularMenu6 h4{
+    font-size: 1.8rem;
+}
+
+/* .ourGalleryContainer {
+    background-color: #00ffff;
+} */
+/* 
+.ourGallery {
+    background-color: #be9c79;
+} */
+/* 
+.ourGalleryHeadingBody {
+    background-color: #ff0f00;
+} */
+/* 
+.ourGalleryText {
+    background-color: #d87109;
+} */
+
+.ourGalleryText img {
+    /* background-color: rgb(111, 84, 155); */
+    height: 4rem;
+}
+
+.ourGalleryText h2 {
+    /* background-color: #44d809; */
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+}
+
+.gallery img{
+    aspect-ratio: 11/8;
+    width: 100%;
+    /* object-fit: cover; */
+    padding: 1rem 0rem;
+}
+
+.ourGallery1 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+
+.ourGallery2 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+
+.ourGallery3 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.ourGallery4 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+
+.ourGallery5 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+
+.ourGallery6 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+
+/* .ourTeamContainer {
+    background-color: #00ffff;
+} */
+/* 
+.ourTeam {
+    background-color: #be9c79;
+} */
+/* 
+.ourTeamHeadingBody {
+    background-color: #ff0f00;
+} */
+/* 
+.ourTeamText {
+    background-color: #d87109;
+} */
+
+.ourTeamText img {
+    /* background-color: rgb(111, 84, 155); */
+    height: 4rem;
+}
+
+.ourTeamText h2 {
+    /* background-color: #44d809; */
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+}
+
+.ourTeamimgBody {
+    /* background-color: #1d3115; */
+    padding: 2rem 12rem;
+
+}
+
+.Team img{
+    aspect-ratio: 9/9;
+    width: 100%;
+    object-fit: cover;
+}
+
+.ourTeam1 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.ourTeam1 h4{
+    font-size: 1.8rem;
+}
+
+.ourTeam2 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.ourTeam2 h4{
+    font-size: 1.8rem;
+}
+
+
+.ourTeam3 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+
+.ourTeam3 h4{
+    font-size: 1.8rem;
+}
+
+.ourTeamimgBody1 {
+    /* background-color: #1d3115; */
+    padding: 2rem 12rem;
+}
+
+.ourTeam4 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.ourTeam4 h4{
+    font-size: 1.8rem;
+}
+
+.ourTeam5 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.ourTeam5 h4{
+    font-size: 1.8rem;
+}
+
+.ourTeam6 {
+    /* background-color: #d5d809; */
+    padding: 0rem 1.5rem;
+}
+
+.ourTeam6 h4{
+    font-size: 1.8rem;
+}
+
+/*::: MAIN CODE ENDS HERE::: */
+/*::: FOOTER CODE STARTS HERE::: */
+
+.headingTitle img{
+    height: 4rem;
+}
+
+.headingTitle h2 {
+    /* background-color: #44d809; */
+    font-size: 4rem;
+    font-family: "Merienda", cursive;
+    font-weight: 800;
+}
+
+.bookingForm{
+    border:1px solid black;
+    padding: 0rem 2rem;
+}
+.bookingForm ::placeholder{
+    font-family:"Nunito", sans-serif ;
+    font-optical-sizing: auto;
+    font: weight 200;
+    font-style: normal;
+    font-size: 20px;    
+}
+.bookingForm h3{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 3rem;
+}
+.formBody{
+    border-color: black;
+}
+ .formGroup{
+    padding: 1.5rem;
+    /* margin: 1rem 0; */
+    bottom: black;
+ }
+ .formGroup input{
+    height: 4rem;
+    padding: 0 0 0 1rem;
+    width: 35rem;
+ }
+ .formGroup button{
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    color:#f0f8ff ;
+    padding: 1rem;
+    font-weight: 400;
+    font-size: 2rem;
+ }
+ .formGroup button:hover
+ {
+    background-color: #000000;
+ }
+ .iconsBody
+ {
+    padding: 2rem 0;
+ }
+ .iconsCardHeader
+ {
+    padding: 2rem 0;
+ }
+.iconsCardHeader i 
+{
+  background-color: var(--primaryColor);
+  padding: 10px;
+   border-radius: 22rem;
+   box-shadow: #be9c79;
+   font-size:25px;
+   color: #f0f8ff;
+
+}
+
+.iconsCardBody h3{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font: weight 100;
+    font-style: normal;
+    font-size: 20px;
+}
+.iconsCardBody p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font: weight 100;
+    font-style: normal;
+    font-size: 10px;
+}
+.copyright{
+    padding: 2rem 0rem;
+}
+.copyright p{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    /* font: weight 100; */
+    font-style: normal;
+    font-size: 20px;
+}
+.copyright span{
+    color: var(--primaryColor);
+}
+/*::: FOOTER CODE ENDS HERE::: */
+
